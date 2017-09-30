@@ -7,6 +7,7 @@ Dependencies and Running Project
 ===============
 - npm
 - Node
+
 After ensuring you have Node and npm installed on your server run the following command to install the other dependencies needed:
 ```shell
 npm install
