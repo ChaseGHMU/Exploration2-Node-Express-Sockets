@@ -18,7 +18,7 @@ Walking Through the Code
 
 The main components of running through the server is involved in server.js.
 
-```script
+```javascript
 var express = require('express');
 var socket = require('socket.io');
 var server = app.listen(4000);
@@ -28,7 +28,7 @@ app.use(express.static('public'));
 
 These two lines of code give you access to both express and socket.io. Whenever port 4000 is hit, Express tells the page to use information from the "public" folder. Express is used to listen for when a certain port is hit and return the relevant information for that selected port.
 
-```script
+```javascript
 io.sockets.on('connection', newConnection);
 
 function newConnection(socket) {
@@ -43,7 +43,7 @@ function newConnection(socket) {
 
 The following code is used all for sockets. Sockets is used to pass information back and forth between the server and client. What the following code does is it interacts with Express and is told when theres a new connection. It will then call the function newConnection and write the id of the current connection. The rest of the relevant socket data is located in sketch.js here:
 
-```script
+```javascript
   socket = io.connect("www.chasejordonallen.com:3000");
   
   
